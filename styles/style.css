@@ -41,7 +41,7 @@ a:hover {
 
 .menu a {
     color: #007bff;
-    font: bold 16px Arial, Verdana;
+    font: bold 16px Arial, Verdana, sans-serif;
 }
 
 .menu li {

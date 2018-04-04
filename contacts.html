@@ -6,26 +6,28 @@
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <div class="logo">Одежда для собак</div>
-        <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <div class="clearfix"></div>
-        <hr>
+        <header>
+            <div class="logo">Одежда для собак</div>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="clearfix"></div>
+            <hr>
+        </header>
         <h1>Контакты</h1>
-        <form action="/">
+        <form action="index.html" method="post">
             <fieldset>
                 <legend>Напишите нам</legend>
-                <div class="field"><input type="text" placeholder="Имя"></div>
-                <div class="field"><input type="email" placeholder="E-mail"></div>
-                <div class="field"><input type="tel" placeholder="Телефон"></div>
-                <div class="field"><input type="text" placeholder="Тема"></div>
+                <div class="field"><input name="name" type="text" placeholder="Имя"></div>
+                <div class="field"><input name="email" type="email" placeholder="E-mail"></div>
+                <div class="field"><input name="phone" type="tel" placeholder="Телефон"></div>
+                <div class="field"><input name="subject" type="text" placeholder="Тема"></div>
                 <div class="field">
                     <label for="text">Суть вашего письма:</label>
                     <br>
-                    <textarea id="text"></textarea>
+                    <textarea name="text" id="text"></textarea>
                 </div>
                 <div class="field"><button>Отправить</button></div>
             </fieldset>
@@ -41,7 +43,9 @@
                 allowfullscreen>
         </iframe>
 
-        <hr>
-        <p>&copy; &quot;Все права защищены&quot;</p>
+        <footer>
+            <hr>
+            <p>&copy; &quot;Все права защищены&quot;</p>
+        </footer>
     </body>
 </html>
