@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700');
 
-body, html {
+body,
+html {
     padding: 0;
     margin: 0;
 }
@@ -63,7 +64,8 @@ a:hover {
     font-weight: bold;
 }
 
-.menu, .menuBanner {
+.menu,
+.menuBanner {
     padding: 0;
     float: right;
 }
@@ -84,7 +86,8 @@ a:hover {
     background-size: contain;
 }
 
-.brand, .brandBanner {
+.brand,
+.brandBanner {
     float: left;
     font-size: 22px;
     font-weight: bold;
@@ -92,12 +95,14 @@ a:hover {
     margin-left: 15px;
 }
 
-.brand a:visited, .brand a {
+.brand a:visited,
+.brand a {
     color: black;
     text-decoration: none;
 }
 
-.brandBanner a:visited, .brandBanner a {
+.brandBanner a:visited,
+.brandBanner a {
     color: white;
     text-decoration: none;
 }
@@ -114,11 +119,13 @@ a:hover {
     text-decoration: none;
 }
 
-.menu a:hover, .menuBanner a:hover {
+.menu a:hover,
+.menuBanner a:hover {
     color: #f5a637;
 }
 
-.menu li, .menuBanner li {
+.menu li,
+.menuBanner li {
     list-style-type: none;
     display: inline-block;
     margin-right: 10px;
