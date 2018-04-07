@@ -7,8 +7,14 @@
     </head>
     <body>
         <?php
-        $page = $_GET["page"];
-        if (!isset($page)) {
+        if (isset($_GET["page"])) {
+            $page = $_GET["page"];
+        }
+        else {
+            $page = "";
+        }
+
+        if ($page == "") {
             require("templates/headerBanner.php");
         }
         else {
@@ -17,8 +23,7 @@
         ?>
         <div class="wrapper">
             <?php
-            $page = $_GET["page"];
-            if (!isset($page)) {
+            if ($page == "") {
                 require("templates/main.php");
             }
             else if ($page == "catalog") {
