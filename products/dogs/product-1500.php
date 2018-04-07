@@ -9,11 +9,11 @@
     <header>
         <div class="wrapper">
             <div class="logo"></div>
-            <div class="brand"><a href="/index.html">XDogs</a></div>
+            <div class="brand"><a href="/index.php">XDogs</a></div>
             <ul class="menu">
-                <li><a href="../../index.html">Главная</a></li>
-                <li><a href="../../catalog.html">Каталог</a></li>
-                <li><a href="../../contacts.html">Контакты</a></li>
+                <li><a href="../../index.php">Главная</a></li>
+                <li><a href="../../templates/catalog.php">Каталог</a></li>
+                <li><a href="../../templates/contacts.php">Контакты</a></li>
             </ul>
             <div class="clearfix"></div>
         </div>
