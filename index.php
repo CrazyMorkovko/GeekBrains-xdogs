@@ -3,18 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Главная</title>
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/style.css?v=<?=time()?>">
     </head>
     <body>
         <?php
-        if (isset($_GET["page"])) {
-            $page = $_GET["page"];
-        }
-        else {
-            $page = "";
-        }
+        $page = isset($_GET["page"]) ? $_GET["page"] : "main";
 
-        if ($page == "") {
+        if ($page == "main") {
             require("templates/headerBanner.php");
         }
         else {
@@ -23,7 +18,7 @@
         ?>
         <div class="wrapper">
             <?php
-            if ($page == "") {
+            if ($page == "main") {
                 require("templates/main.php");
             }
             else if ($page == "catalog") {
