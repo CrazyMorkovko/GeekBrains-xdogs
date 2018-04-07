@@ -32,8 +32,14 @@
             else if ($page == "contacts") {
                 require("templates/contacts.php");
             }
-            else if ($page == "product") {
-
+            else if ($page == "product-1178") {
+                require("products/dogs/product-1178.php");
+            }
+            else if ($page == "product-1467") {
+                require("products/dogs/product-1467.php");
+            }
+            else if ($page == "product-1500") {
+                require("products/dogs/product-1500.php");
             }
             ?>
         </div>
