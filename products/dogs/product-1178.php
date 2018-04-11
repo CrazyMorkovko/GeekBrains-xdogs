@@ -1,14 +1,16 @@
-<div class="productPage">
+<div class="product">
     <h1>Легкий комбинезон Панда голубой махровый</h1>
     <p>Код товара: 1178</p>
-    <a href="../../images/products/product-1178.jpeg" target="_blank">
-        <img class="productImage"
-             src="../../images/products/product-1178.jpeg"
+    <a href="/images/products/product-1178.jpeg" target="_blank">
+        <img class="product__img"
+             src="/images/products/product-1178.jpeg"
              alt="Легкий комбинезон Панда голубой махровый">
     </a>
     <div><button>В корзину</button></div>
     <h2>Описание товара</h2>
-    <div class="shortDescription"><p>Легкий махровый комбинезон «Панда» предназначен для первых весенних дней.</p></div>
+    <div class="product__short-desc">
+        <p>Легкий махровый комбинезон «Панда» предназначен для первых весенних дней.</p>
+    </div>
     <h2>Характеристики товара</h2>
     <table>
         <thead>
@@ -47,13 +49,13 @@
                 <td>XL</td>
                 <td>36-37</td>
                 <td>47-49</td>
-                <td class="notExists">нет</td>
+                <td class="not-exists">нет</td>
             </tr>
         </tbody>
     </table>
 
     <h3>Наши преимущества:</h3>
-    <ol class="checkList">
+    <ol class="product__check-list">
         <li>Низкие цены</li>
         <li>Все вещи на сайте - в наличии</li>
         <li>Ускоренная доставка заказа</li>
@@ -61,7 +63,7 @@
     </ol>
 
     <h2>Подробное описание товара</h2>
-    <div class="description">
+    <div class="product__desc">
         <p>
             Комбинезон небесного цвета выполнен из мягкой махры, спинка украшена аппликацией в виде головы панды. Капюшон
             прикрывает ушки собаки, рукава окантованы тесьмой. Низ курточки посажен на трикотажную манжету. Штанишки

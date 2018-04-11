@@ -1,8 +1,8 @@
-<header>
+<header class="header">
     <div class="wrapper">
-        <a href="/index.php" class="logoLink">
-            <div class="logo"></div>
-            <div class="brand">XDogs</div>
+        <a href="/index.php" class="header__logo-link">
+            <div class="header__logo"></div>
+            <div class="header__brand">XDogs</div>
         </a>
         <ul class="menu">
             <li><a href="/">Главная</a></li>

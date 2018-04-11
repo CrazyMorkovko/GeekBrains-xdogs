@@ -1,11 +1,11 @@
-<div class="mainBanner">
-    <header>
+<div class="main-banner">
+    <header class="header">
         <div class="wrapper">
-            <a href="/index.php" class="logoLinkBanner">
-                <div class="logoBanner logo"></div>
-                <div class="brandBanner brand">XDogs</div>
+            <a href="/index.php" class="header__logo-link header__logo-link--banner">
+                <div class="header__logo header__logo--banner"></div>
+                <div class="header__brand header__brand--banner">XDogs</div>
             </a>
-            <ul class="menuBanner menu">
+            <ul class="menu menu--banner">
                 <li><a href="/">Главная</a></li>
                 <li><a href="index.php?page=catalog">Каталог</a></li>
                 <li><a href="index.php?page=contacts">Контакты</a></li>

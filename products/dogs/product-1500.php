@@ -1,12 +1,12 @@
-<div class="productPage">
+<div class="product">
     <h1>Комбинезон Зефир бело-розовый</h1>
     <p>Код товара: 1500</p>
-    <a href="../../images/products/product-1500.jpeg" target="_blank">
-        <img class="productImage" src="../../images/products/product-1500.jpeg" alt="Комбинезон Зефир бело-розовый">
+    <a href="/images/products/product-1500.jpeg" target="_blank">
+        <img class="product__img" src="/images/products/product-1500.jpeg" alt="Комбинезон Зефир бело-розовый">
     </a>
     <div><button>В корзину</button></div>
     <h2>Описание товара</h2>
-    <div class="shortDescription">
+    <div class="product__short-desc">
         <p>
             Комбинезон «Зефир» разнообразит гардероб домашнего любимца и поможет ему чувствовать себя комфортно
             даже во время зимних прогулок.
@@ -45,7 +45,7 @@
             <td>M</td>
             <td>27</td>
             <td>38-40</td>
-            <td rowspan="2" class="notExists">нет</td>
+            <td rowspan="2" class="not-exists">нет</td>
         </tr>
         <tr>
             <td>L</td>
@@ -56,7 +56,7 @@
     </table>
 
     <h3>Наши преимущества:</h3>
-    <ol class="checkList">
+    <ol class="product__check-list">
         <li>Низкие цены</li>
         <li>Все вещи на сайте - в наличии</li>
         <li>Ускоренная доставка заказа</li>
@@ -64,7 +64,7 @@
     </ol>
 
     <h2>Подробное описание товара</h2>
-    <div class="description">
+    <div class="product__desc">
         <p>
             Эта модель выполнена из мягкой плотной ткани белого оттенка и украшена
             принтом в виде мелких розовых цветов. Длинные рукава и штанины с опушкой защищают лапки собаки, капюшон

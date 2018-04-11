@@ -15,7 +15,7 @@ body {
 header {
     padding: 10px 0;
     width: 100%;
-    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.4);
 }
 
 table,
@@ -37,7 +37,7 @@ a {
 }
 
 header,
-.logo {
+.header__logo {
     height: 50px;
 }
 
@@ -50,13 +50,13 @@ header,
     align-items: center;
 }
 
-.mainBanner {
+.main-banner {
     background: url("/images/background/dogBackground.jpeg") no-repeat center center;
     background-size: cover;
     height: 600px;
 }
 
-.mainBanner header {
+.main-banner header {
     box-shadow: none;
 }
 
@@ -65,12 +65,12 @@ header,
     margin: 0 auto;
 }
 
-.mainBanner .center {
+.main-banner .center {
     height: 530px;
 }
 
 .exists,
-.notExists,
+.not-exists,
 .wait {
     font-weight: bold;
 }
@@ -79,7 +79,7 @@ header,
     color: green;
 }
 
-.notExists {
+.not-exists {
     color: red;
 }
 
@@ -91,18 +91,18 @@ header,
     float: right;
 }
 
-.logo {
+.header__logo {
     width: 50px;
     background: url("/images/background/logoBlack.svg") no-repeat;
     background-size: contain;
     float: left;
 }
 
-.logoBanner {
+.header__logo--banner {
     background-image: url("/images/background/logo.svg");
 }
 
-.brand {
+.header__brand {
     font-size: 22px;
     line-height: 50px;
     margin-left: 15px;
@@ -110,8 +110,8 @@ header,
     float: left;
 }
 
-.logoLink:visited,
-.logoLink,
+.header__logo-link:visited,
+.header__logo-link,
 .menu a {
     color: black;
 }
@@ -131,25 +131,25 @@ header,
     margin-right: 10px;
 }
 
-.mainBanner,
-.logoLinkBanner:visited,
-.logoLinkBanner,
-.menuBanner a {
+.main-banner,
+.header__logo-link--banner:visited,
+.header__logo-link--banner,
+.menu--banner a {
     color: white;
 }
 
-.product img,
-.product,
-.productImage {
+.product-card img,
+.product-card,
+.product__img {
     width: 280px;
 }
 
-.product img {
+.product-card img {
     display: block;
     margin-bottom: 10px;
 }
 
-.product {
+.product-card {
     margin: 20px;
     float: left;
 }
@@ -158,15 +158,15 @@ header,
     clear: both;
 }
 
-.productImage {
+.product__img {
     border: 1px solid black;
 }
 
-.productImage:hover {
+.product__img:hover {
     border: 1px solid transparent;
 }
 
-.contactMap {
+.contact-map {
     width: 100%;
     height: 450px;
     border: 0;
@@ -189,7 +189,7 @@ header,
     height: auto;
 }
 
-.productPage h2 {
+.product h2 {
     color: black;
     font-size: 18px;
     font-weight: 400;
@@ -197,14 +197,14 @@ header,
     padding: 5px;
 }
 
-.productPage .shortDescription {
+.product__short-desc {
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
 
-.productPage .description {
+.product__desc {
     color: #505050;
     font-size: 16px;
     font-weight: 400;
@@ -212,7 +212,7 @@ header,
     text-align: left;
 }
 
-.productPage .checkList li {
+.product__check-list li {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
     color: green;
     position: relative;
@@ -220,7 +220,7 @@ header,
     list-style-type: none;
 }
 
-.productPage .checkList li:after {
+.product__check-list li:after {
     top: 2px;
     left: 0;
     content: " ";
@@ -231,7 +231,7 @@ header,
     display: block;
 }
 
-.productPage ol {
+.product__check-list {
     padding-left: 0;
 }
 
@@ -240,7 +240,7 @@ header,
     background: #eaeaea;
 }
 
-.productPage p:first-letter {
+.product p:first-letter {
     font-size: 22px;
     font-family: "Times New Roman", serif;
 }
