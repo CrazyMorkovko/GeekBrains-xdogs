@@ -1,7 +1,5 @@
 <div class="productPage">
     <h1>Комбинезон Зефир бело-розовый</h1>
-    <p>Цена: <strong>1200 руб</strong></p>
-    <p>На складе: <span class="notExists">нет</span></p>
     <p>Код товара: 1500</p>
     <a href="../../images/products/product-1500.jpeg" target="_blank">
         <img class="productImage" src="../../images/products/product-1500.jpeg" alt="Комбинезон Зефир бело-розовый">
@@ -16,31 +14,45 @@
     </div>
     <h2>Характеристики товара</h2>
     <table>
+        <thead>
         <tr>
-            <td>Размер</td>
-            <td>Длина по спинке</td>
-            <td>Объем груди</td>
+            <th>Размер</th>
+            <th>Длина по спинке</th>
+            <th>Объем груди</th>
+            <th>На складе</th>
         </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td>Цена</td>
+            <td colspan="3"><strong>1200 рублей</strong></td>
+        </tr>
+        </tfoot>
+        <tbody>
         <tr>
             <td>XS</td>
             <td>19.5</td>
             <td>28-30</td>
+            <td class="exists">есть</td>
         </tr>
         <tr>
             <td>S</td>
             <td>23.5</td>
             <td>30-34</td>
+            <td class="wait">ожидается</td>
         </tr>
         <tr>
             <td>M</td>
             <td>27</td>
             <td>38-40</td>
+            <td rowspan="2" class="notExists">нет</td>
         </tr>
         <tr>
             <td>L</td>
             <td>32</td>
-            <td>41-46</td>
+            <td>46-49</td>
         </tr>
+        </tbody>
     </table>
 
     <h3>Наши преимущества:</h3>

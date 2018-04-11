@@ -19,8 +19,14 @@ header {
 }
 
 table,
-td {
+td,
+th {
     border: 1px solid black;
+}
+
+th {
+    padding: 5px;
+    height: 30px;
 }
 
 a:hover,
@@ -153,7 +159,11 @@ header,
 }
 
 .productImage {
-    border: 1px solid lightgrey;
+    border: 1px solid black;
+}
+
+.productImage:hover {
+    border: 1px solid transparent;
 }
 
 .contactMap {
@@ -223,4 +233,19 @@ header,
 
 .productPage ol {
     padding-left: 0;
+}
+
+.email:focus {
+    color: #007bff;
+    background: #eaeaea;
+}
+
+.productPage p:first-letter {
+    font-size: 22px;
+    font-family: "Times New Roman", serif;
+}
+
+input[type="text"],
+#text {
+    text-transform: capitalize;
 }

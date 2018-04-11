@@ -3,7 +3,7 @@
     <fieldset>
         <legend>Напишите нам</legend>
         <div class="field"><input name="name" type="text" placeholder="Имя"></div>
-        <div class="field"><input name="email" type="email" placeholder="E-mail"></div>
+        <div class="field"><input name="email" type="email" placeholder="E-mail" class="email"></div>
         <div class="field"><input name="phone" type="tel" placeholder="Телефон"></div>
         <div class="field"><input name="subject" type="text" placeholder="Тема"></div>
         <div class="field">

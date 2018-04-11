@@ -1,7 +1,5 @@
 <div class="productPage">
     <h1>Дождевик Заяц розовый</h1>
-    <p>Цена: <strong>1000 руб</strong></p>
-    <p>На складе: <span class="exists">есть</span></p>
     <p>Код товара: 1467</p>
     <a href="../../images/products/product-1467.jpeg" target="_blank">
         <img class="productImage" src="../../images/products/product-1467.jpeg" alt="Дождевик Заяц розовый">
@@ -11,20 +9,32 @@
     <div class="shortDescription"><p>Дождевик «Заяц» выполнен из болоньевой ткани сочного розового цвета.</p></div>
     <h2>Характеристики товара</h2>
     <table>
+        <thead>
         <tr>
-            <td>Размер</td>
-            <td>Длина по спинке</td>
-            <td>Объем груди</td>
+            <th>Размер</th>
+            <th>Длина по спинке</th>
+            <th>Объем груди</th>
+            <th>На складе</th>
         </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td>Цена</td>
+            <td colspan="3"><strong>1000 рублей</strong></td>
+        </tr>
+        </tfoot>
+        <tbody>
         <tr>
             <td>S</td>
             <td>25.5</td>
             <td>34-37</td>
+            <td class="exists">есть</td>
         </tr>
         <tr>
             <td>M</td>
             <td>29</td>
             <td>39-41</td>
+            <td rowspan="2" class="wait">ожидается</td>
         </tr>
         <tr>
             <td>L</td>
@@ -35,7 +45,9 @@
             <td>XL</td>
             <td>36</td>
             <td>46-49</td>
+            <td class="notExists">нет</td>
         </tr>
+        </tbody>
     </table>
 
     <h3>Наши преимущества:</h3>
