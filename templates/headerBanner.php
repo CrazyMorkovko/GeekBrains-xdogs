@@ -1,6 +1,6 @@
 <div class="main-banner">
     <header class="header">
-        <div class="wrapper">
+        <div class="container">
             <a href="/index.php" class="header__logo-link header__logo-link--banner">
                 <div class="header__logo header__logo--banner"></div>
                 <div class="header__brand header__brand--banner">XDogs</div>
@@ -13,5 +13,5 @@
             <div class="clearfix"></div>
         </div>
     </header>
-    <div class="wrapper center"><h1>Одежда для собак</h1></div>
+    <div class="container center"><h1>Одежда для собак</h1></div>
 </div>

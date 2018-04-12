@@ -1,5 +1,5 @@
 <header class="header">
-    <div class="wrapper">
+    <div class="container">
         <a href="/index.php" class="header__logo-link">
             <div class="header__logo"></div>
             <div class="header__brand">XDogs</div>

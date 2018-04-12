@@ -6,43 +6,93 @@
         <link rel="stylesheet" href="styles/style.css?v=<?=time()?>">
     </head>
     <body>
-        <?php
-        $page = isset($_GET["page"]) ? $_GET["page"] : "main";
-
-        if ($page == "main") {
-            require("templates/headerBanner.php");
-        }
-        else {
-            require("templates/header.php");
-        }
-        ?>
         <div class="wrapper">
-            <?php
-            if ($page == "main") {
-                require("templates/main.php");
-            }
-            else if ($page == "catalog") {
-                require("templates/catalog.php");
-            }
-            else if ($page == "contacts") {
-                require("templates/contacts.php");
-            }
-            else if ($page == "product-1178") {
-                require("products/dogs/product-1178.php");
-            }
-            else if ($page == "product-1467") {
-                require("products/dogs/product-1467.php");
-            }
-            else if ($page == "product-1500") {
-                require("products/dogs/product-1500.php");
-            }
-            ?>
-        </div>
-        <footer>
-            <hr>
-            <div class="wrapper">
-                <p>&copy; &quot;Все права защищены&quot;</p>
+            <div class="content">
+                <?php
+                    $products = [
+                        [
+                        'id' => 1178,
+                        'name' => 'Легкий комбинезон Панда голубой махровый',
+                        'img' => '/images/products/product-1178.jpeg"',
+                        'shortDesc' => 'Легкий махровый комбинезон «Панда» предназначен для первых весенних дней.',
+                        'attribute' => '',
+                        'desc' => 'Комбинезон небесного цвета выполнен из мягкой махры, спинка украшена аппликацией в 
+                        виде головы панды. Капюшон прикрывает ушки собаки, рукава окантованы тесьмой. Низ курточки 
+                        посажен на трикотажную манжету. Штанишки выполнены из черной махровой ткани и украшены голубыми 
+                        манжетами. Комбинезон без подкладки, застегивается на кнопки. Легкий и теплый, он не сковывает 
+                        движений и согревает вашего питомца в прохладные дни.'
+                        ],
+
+                        [
+                        'id' => 1467,
+                        'name' => 'Дождевик Заяц розовый',
+                        'img' => '/images/products/product-1467.jpeg',
+                        'shortDesc' => 'Дождевик «Заяц» выполнен из болоньевой ткани сочного розового цвета.',
+                        'attribute' => '',
+                        'desc' => 'Подол дождевика по краям стянут резинкой и надежно защищает собаку от брызг дождя и 
+                        промозглого ветра, а капюшон хорошо прикрывает ушки. Рукава и низ дополнены светоотражающей 
+                        серой лентой, застежка на три удобные кнопки облегчает сборы на прогулку. Забавная заячья 
+                        мордочка на спинке издалека привлекает внимание и позволяет не терять из вида питомца на 
+                        собачьей площадке.'
+                        ],
+
+                        [
+                        'id' => 1500,
+                        'name' => 'Комбинезон Зефир бело-розовый',
+                        'img' => '/images/products/product-1500.jpeg',
+                        'shortDesc' => 'Комбинезон «Зефир» разнообразит гардероб домашнего любимца и поможет ему 
+                        чувствовать себя комфортно даже во время зимних прогулок.',
+                        'attribute' => '',
+                        'desc' => 'Эта модель выполнена из мягкой плотной ткани белого оттенка и украшена принтом в виде 
+                        мелких розовых цветов. Длинные рукава и штанины с опушкой защищают лапки собаки, капюшон украшен 
+                        забавными заячьими ушками и не пропускает холодный воздух и ветер. Штанины декорированы тонкими 
+                        лампасами. Внутренняя часть комбинезона утеплена мягким ворсистым материалом, дающим этой модели 
+                        теплосберегающие свойства, а также комфорт вашему любимцу.'
+                        ]
+                    ];
+
+
+                    $page = isset($_GET["page"]) ? $_GET["page"] : "main";
+
+                    if ($page == "main") {
+                        require("templates/headerBanner.php");
+                    }
+                    else {
+                        require("templates/header.php");
+                    }
+                ?>
+
+                    <div class="container">
+                        <?php
+                            if ($page == "main") {
+                                require("templates/main.php");
+                            }
+                            else if ($page == "catalog") {
+                                require("templates/catalog.php");
+                            }
+                            else if ($page == "contacts") {
+                                require("templates/contacts.php");
+                            }
+                            else if ($page == "product") {
+                                $id = $_GET['id'];
+                                $product = [];
+                                foreach ($products as $good) {
+                                    if ($good['id'] == $id) {
+                                        $product = $good;
+                                        break;
+                                    }
+                                }
+                                require("products/dogs/openProduct.php");
+                            }
+                        ?>
+                </div>
             </div>
-        </footer>
+
+            <footer class="footer">
+                <div class="container">
+                    <p>&copy; &quot;Все права защищены&quot;</p>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

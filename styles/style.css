@@ -4,6 +4,7 @@ body,
 html {
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 body {
@@ -60,9 +61,18 @@ header,
     box-shadow: none;
 }
 
-.wrapper {
+.container {
     width: 1100px;
     margin: 0 auto;
+}
+
+.content {
+    padding-bottom: 90px;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
 }
 
 .main-banner .center {
@@ -149,11 +159,6 @@ header,
     margin-bottom: 10px;
 }
 
-.product-card {
-    margin: 20px;
-    float: left;
-}
-
 .clearfix {
     clear: both;
 }
@@ -168,7 +173,7 @@ header,
 
 .contact-map {
     width: 100%;
-    height: 450px;
+    height: 374px;
     border: 0;
 }
 
@@ -198,10 +203,23 @@ header,
 }
 
 .product__short-desc {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.product__short-desc p {
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
+}
+
+.product__short-desc h2 {
+    margin-top: 0;
+}
+
+.product__body {
+    display: flex;
 }
 
 .product__desc {
@@ -248,4 +266,60 @@ header,
 input[type="text"],
 #text {
     text-transform: capitalize;
+}
+
+.footer {
+    height: 40px;
+    box-shadow: inset 0 2px 3px 0 rgba(0,0,0,0.4);
+    text-align: right;
+    padding: 20px 0 20px 0;
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.beauty-button {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.beauty-button:hover {
+    background: rgb(53, 167, 110);
+    color: white;
+}
+
+.beauty-button:active {
+    color: white;
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.article {
+    margin-bottom: 10px;
+}
+
+.product-card {
+    flex-basis: calc(25% - 20px);
+    margin: 0 10px 10px;
+
+}
+
+.product-card img {
+    width: auto;
+    max-width: 100%;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
