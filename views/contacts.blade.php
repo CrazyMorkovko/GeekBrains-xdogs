@@ -2,7 +2,7 @@
 @section('content')
 
 <h1>Контакты</h1>
-<form action="/index.php" method="post">
+<form action="/index.php?page=contacts" method="post">
     <fieldset>
         <legend>Напишите нам</legend>
         <div class="field"><input name="name" type="text" placeholder="Имя"></div>
