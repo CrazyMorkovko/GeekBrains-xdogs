@@ -3,6 +3,6 @@
 ## Install
 ```$ composer install```
 
-##Requirements
+## Requirements
  * php >= 5.6
  * ext-mbstring
