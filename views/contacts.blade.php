@@ -1,3 +1,6 @@
+@extends('layout')
+@section('content')
+
 <h1>Контакты</h1>
 <form action="/index.php" method="post">
     <fieldset>
@@ -24,3 +27,5 @@
         class="contact-map"
         allowfullscreen>
 </iframe>
+
+@endsection

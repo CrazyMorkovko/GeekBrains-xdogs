@@ -3,7 +3,7 @@ $products = [
     [
         'id' => 1178,
         'name' => 'Легкий комбинезон Панда голубой махровый',
-        'img' => '/images/products/product-1178.jpeg"',
+        'img' => '/images/products/product-1178.jpeg',
         'shortDesc' => 'Легкий махровый комбинезон «Панда» предназначен для первых весенних дней.',
         'attributes' => [
             [
