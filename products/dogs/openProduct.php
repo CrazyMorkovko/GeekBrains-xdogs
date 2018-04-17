@@ -1,17 +1,30 @@
 <div class="product">
-    <h1><?php echo $product['name']; ?></h1>
+    <h1><?= $product['name']; ?></h1>
     <div class="product__body">
         <div>
-            <a href="<?php echo $product['img']; ?>" target="_blank">
+            <a href="<?= $product['img']; ?>" target="_blank">
                 <img class="product__img"
-                     src="<?php echo $product['img']; ?>"
-                     alt="<?php echo $product['name']; ?>">
+                     src="<?= $product['img']; ?>"
+                     alt="<?= $product['name']; ?>">
             </a>
         </div>
         <div class="product__short-desc">
             <h2>Описание товара</h2>
-            <p><?php echo $product['shortDesc']; ?></p>
-            <div class="article">Код товара: <?php echo $product['id']; ?></div>
+            <p><?= $product['shortDesc']; ?></p>
+
+            <div class="mb-1">Код товара: <?php echo $product['id']; ?></div>
+            <?php if ($product['status'] == 1): ?>
+            <div class="mb-1">На складе: <span class="exists">есть</span></div>
+            <?php endif; ?>
+
+            <?php if ($product['status'] == 2): ?>
+            <div class="mb-1">На складе: <span class="not-exists">нет</span></div>
+            <?php endif; ?>
+
+            <?php if ($product['status'] == 3): ?>
+            <div class="mb-1">На складе: <span class="wait">ожидается</span></div>
+            <?php endif; ?>
+
             <div><a class="beauty-button">В корзину</a></div>
         </div>
     </div>
@@ -22,39 +35,22 @@
             <th>Размер</th>
             <th>Длина по спинке</th>
             <th>Объем груди</th>
-            <th>На складе</th>
         </tr>
         </thead>
         <tfoot>
         <tr>
             <td>Цена</td>
-            <td colspan="3"><strong>690 рублей</strong></td>
+            <td colspan="2"><strong><?= $product['price']; ?> рублей</strong></td>
         </tr>
         </tfoot>
         <tbody>
+        <?php foreach ($product["attributes"] as $attribute): ?>
         <tr>
-            <td>S</td>
-            <td>23-24</td>
-            <td>29-32</td>
-            <td rowspan="2" class="exists">есть</td>
+            <td><?= $attribute['size']; ?></td>
+            <td><?= $attribute['width']; ?></td>
+            <td><?= $attribute['volume']; ?></td>
         </tr>
-        <tr>
-            <td>M</td>
-            <td>25-26</td>
-            <td>32-35</td>
-        </tr>
-        <tr>
-            <td>L</td>
-            <td>33</td>
-            <td>38-40</td>
-            <td class="wait">ожидается</td>
-        </tr>
-        <tr>
-            <td>XL</td>
-            <td>36-37</td>
-            <td>47-49</td>
-            <td class="not-exists">нет</td>
-        </tr>
+        <?php endforeach; ?>
         </tbody>
     </table>
 
@@ -68,7 +64,7 @@
 
     <h2>Подробное описание товара</h2>
     <div class="product__desc">
-        <p><?php echo $product['desc']; ?></p>
+        <p><?= $product['desc']; ?></p>
     </div>
 
     <h2>Отзывы</h2>

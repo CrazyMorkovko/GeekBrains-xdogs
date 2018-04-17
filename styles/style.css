@@ -44,6 +44,7 @@ header,
 
 .menu {
     padding: 0;
+    float: right;
 }
 
 .center {
@@ -95,10 +96,6 @@ header,
 
 .wait {
     color: skyblue;
-}
-
-.menu {
-    float: right;
 }
 
 .header__logo {
@@ -303,7 +300,7 @@ input[type="text"],
     box-shadow: 0 3px rgb(33,147,90) inset;
 }
 
-.article {
+.mb-1 {
     margin-bottom: 10px;
 }
 
