@@ -5,8 +5,6 @@ require('app/productList.php');
 use Jenssegers\Blade\Blade;
 $blade = new Blade('views', 'cache');
 
-require("app/productList.php");
-
 $page = isset($_GET["page"]) ? $_GET["page"] : "main";
 
 if ($page == "main") {

@@ -2,20 +2,15 @@
 
 body,
 html {
-    padding: 0;
-    margin: 0;
     height: 100%;
 }
 
 body {
-    min-width: 1140px;
     background-color: #f8f8f8;
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    padding: 10px 0;
-    width: 100%;
+.navbar {
     box-shadow: 0 2px 3px 0 rgba(0,0,0,0.4);
 }
 
@@ -35,11 +30,6 @@ a:visited,
 a {
     color: #007bff;
     text-decoration: none;
-}
-
-header,
-.header__logo {
-    height: 50px;
 }
 
 .menu {
@@ -62,9 +52,17 @@ header,
     box-shadow: none;
 }
 
-.container {
-    width: 1100px;
-    margin: 0 auto;
+.main-banner .navbar {
+    box-shadow: none;
+    background: transparent!important;
+}
+
+.main-banner .navbar-brand {
+    color: white!important;
+}
+
+.main-banner .navbar .nav-link {
+    color: white;
 }
 
 .content {
@@ -98,23 +96,18 @@ header,
     color: skyblue;
 }
 
-.header__logo {
+.navbar-brand img {
     width: 50px;
-    background: url("/images/background/logoBlack.svg") no-repeat;
-    background-size: contain;
-    float: left;
 }
 
 .header__logo--banner {
     background-image: url("/images/background/logo.svg");
 }
 
-.header__brand {
+.navbar-brand {
     font-size: 22px;
     line-height: 50px;
-    margin-left: 15px;
     font-weight: bold;
-    float: left;
 }
 
 .header__logo-link:visited,
@@ -128,7 +121,7 @@ header,
     font-size: 16px;
 }
 
-.menu a:hover {
+.navbar .navbar-nav .nav-link:hover {
     color: #f5a637;
 }
 
@@ -154,10 +147,6 @@ header,
 .product-card img {
     display: block;
     margin-bottom: 10px;
-}
-
-.clearfix {
-    clear: both;
 }
 
 .product__img {
@@ -298,10 +287,6 @@ input[type="text"],
     color: white;
     background: rgb(33,147,90);
     box-shadow: 0 3px rgb(33,147,90) inset;
-}
-
-.mb-1 {
-    margin-bottom: 10px;
 }
 
 .product-card {
