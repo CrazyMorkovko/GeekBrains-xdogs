@@ -1,3 +1,5 @@
 .idea
 /vendor/
 composer.lock
+mix-manifest.json
+/styles/style.css

@@ -4,31 +4,33 @@
     <div class="product">
         <h1>{{ $product['name'] }}</h1>
         <div class="product__body mb-2">
-            <div>
-                <a href="#" data-toggle="modal" data-target="#enlargePic" class="product-img-link">
-                    <img class="product__img" src="{{ $product['img'] }}" alt="{{ $product['name'] }}">
-                </a>
-            </div>
-            <div class="product__short-desc">
-                <h2>Описание товара</h2>
-                <p>{{ $product['shortDesc'] }}</p>
+            <div class="d-block d-md-flex w-100">
+                <div class="product__small-img">
+                    <a href="#" data-toggle="modal" data-target="#enlargePic" class="product-img-link">
+                        <img class="product__img" src="{{ $product['img'] }}" alt="{{ $product['name'] }}">
+                    </a>
+                </div>
+                <div class="product__short-desc mt-2 mt-md-0 ml-0 ml-md-3">
+                    <h2>Описание товара</h2>
+                    <p>{{ $product['shortDesc'] }}</p>
 
-                <div class="mb-1">Код товара: {{ $product['id'] }}</div>
-                @switch($product['status'])
-                    @case(1)
-                    <div class="mb-1">На складе: <span class="exists">есть</span></div>
-                    @break
+                    <div class="mb-1">Код товара: {{ $product['id'] }}</div>
+                    @switch($product['status'])
+                        @case(1)
+                        <div class="mb-1">На складе: <span class="exists">есть</span></div>
+                        @break
 
-                    @case(2)
-                    <div class="mb-1">На складе: <span class="not-exists">нет</span></div>
-                    @break
+                        @case(2)
+                        <div class="mb-1">На складе: <span class="not-exists">нет</span></div>
+                        @break
 
-                    @case(3)
-                    <div class="mb-1">На складе: <span class="wait">ожидается</span></div>
-                    @break
-                @endswitch
+                        @case(3)
+                        <div class="mb-1">На складе: <span class="wait">ожидается</span></div>
+                        @break
+                    @endswitch
 
-                <button type="button" class="btn btn-success">В корзину</button>
+                    <button type="button" class="btn btn-success">В корзину</button>
+                </div>
             </div>
         </div>
         <h2>Характеристики товара</h2>

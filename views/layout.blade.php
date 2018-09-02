@@ -12,7 +12,9 @@
 <body>
     <div class="wrapper">
         <header @if ($page == "main") class="main-banner" @endif>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+            <nav class="navbar navbar-expand-lg
+            @if ($page == "main") navbar-dark @else navbar-light @endif
+            bg-light mb-3">
 
                 <div class="container">
                     <a class="navbar-brand" href="/">
